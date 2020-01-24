@@ -1,20 +1,29 @@
 .App {
-  text-align: center;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 60% 40%;
+  font-family: brownie;
 }
 
-.App-logo {
-  height: 40vmin;
+.band-logo {
+  height: 50vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: brownie;
+  src: url(./brown.otf);
 }
 
-.App-header {
-  background-color: #282c34;
+/* @media (prefers-reduced-motion: no-preference) {
+  .band-logo {
+    animation: band-logo-spin infinite 20s linear;
+  }
+} */
+
+.logo {
+  background-color: rgb(4,8,9);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +33,54 @@
   color: white;
 }
 
+.info {
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+/* blue: rgb(17,132, 172); */
+
+.bio {
+  background-color: rgb(41,44,53);
+  color: rgb(219, 207, 175);
+  font-size: 36px;
+  line-height: 1.2;
+  padding: 10%;
+}
+
+.band-name {
+  color: rgb(17,132, 172);
+  font-size: 40px;
+}
+
+.links {
+  background-color: rgb(34,37,43);
+  font-size: 25px;
+  display: grid;
+  padding: 20% 10%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.links > a {
+  width: 50%;
+  text-align: center;
+  padding: 10%;
+}
+
+.links > a > img {
+  width: 100%;
+}
+
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
+/* 
+@keyframes band-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
+

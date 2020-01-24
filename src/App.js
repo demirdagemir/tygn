@@ -1,13 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
+import Socials from './social';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
+      <div className="logo">
+        <img src={logo} className="band-logo" alt="logo" />
+        {/* <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
@@ -17,8 +18,18 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
-      </header>
+        </a> */}
+      </div>
+      <div className="info">
+        <div className="bio">
+          <p>Hi 👋,</p>
+          <p>It's <span className="band-name">Thank You & Good Night</span> from Munich, 🇩🇪.
+          We are Emir, Andreas, Oliver and Maxi.
+          Check out our music below and stay tuned for our next shows.</p>
+          <p>Cheers ✌️</p>
+        </div>
+        <Socials />
+      </div>
     </div>
   );
 }
