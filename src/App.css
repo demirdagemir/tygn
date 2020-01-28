@@ -2,12 +2,12 @@
   display: grid;
   width: 100vw;
   height: 100vh;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 55% 45%;
   font-family: brownie;
 }
 
 .band-logo {
-  height: 50vmin;
+  height: 80vmin;
   pointer-events: none;
 }
 
@@ -24,18 +24,19 @@
 
 .logo {
   background-color: rgb(4,8,9);
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  height: 100vh;
 }
 
 .info {
   display: grid;
   grid-template-rows: 50% 50%;
+  height: 100vh;
 }
 
 /* blue: rgb(17,132, 172); */
@@ -43,14 +44,14 @@
 .bio {
   background-color: rgb(41,44,53);
   color: rgb(219, 207, 175);
-  font-size: 36px;
+  font-size: 30px;
   line-height: 1.2;
-  padding: 10%;
+  padding: 5%;
 }
 
 .band-name {
   color: rgb(17,132, 172);
-  font-size: 40px;
+  font-size: 34px;
 }
 
 .links {
@@ -62,7 +63,7 @@
 }
 
 .links > a {
-  width: 50%;
+  width: 40%;
   text-align: center;
   padding: 10%;
 }
